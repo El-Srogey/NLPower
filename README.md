@@ -1,7 +1,7 @@
 # 🗣️💻🔍 NLP Projects Showcase 📚🚀
 __Welcome to my NLP projects repository, where I showcase my natural language processing skills through three exciting projects:__
 
-## 1️⃣ Article Recommendation System
+## 1️⃣ <a href="https://github.com/El-Srogey/NLPower/tree/main/RS"> Article Recommendation System </a>
 In this project, I scraped data from online news articles and used K-Nearest Neighbors (KNN) algorithm to build a recommendation system. I also utilized Flask, HTML, and Bootstrap to create a web application for users to interact with the model.
 
 ## 2️⃣ Search Engine for Better Ranking
