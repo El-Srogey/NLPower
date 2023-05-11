@@ -25,3 +25,11 @@ score based on its semantic similarity to other articles in the dataset.
 3. Pandas
 4. Scikit-learn
 5. Beautiful Soup
+
+### Snippet Of Site 
+1. (Main Page): ![image](https://github.com/El-Srogey/NLPower/assets/123467925/ad802c4b-f310-4cec-9dba-6a4c21d911f5)
+2. (Scrap Page): ![image](https://github.com/El-Srogey/NLPower/assets/123467925/4e3b6938-0101-4f83-841a-e3ff971cb687)
+3. (Predict Page): ![image](https://github.com/El-Srogey/NLPower/assets/123467925/170def7b-90aa-451c-b303-eccf6d348efa)
+4. (Results Page): ![image](https://github.com/El-Srogey/NLPower/assets/123467925/c44f3401-9e7f-419a-8572-90bc34e04c65)
+5. (Failed Page): ![image](https://github.com/El-Srogey/NLPower/assets/123467925/ebdc1bbb-f003-4907-a5be-c158ba6d9985)
+  
