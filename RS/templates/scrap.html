@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{%block title%} Scraping {%endblock%}
+{% block body %}
+    <!-- method="post" -->
+
+<div class="container">
+    <form action="/get_scrap">
+        <label>Number Of Pages</label>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" name="num_pages" required>
+            <label for="floatingInput">Enter # Pages To Scrap</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Scrap</button>
+    </form>
+</div>
+{% endblock %}
+

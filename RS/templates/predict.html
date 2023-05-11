@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{%block title%} Predict {%endblock%}
+{% block body %}
+<!-- method="post" -->
+
+<div class="container">
+    <form action="/get_predict">
+        <label>URL</label>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" name="url" required>
+            <label for="floatingInput">Enter The-Targeted URL</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+</div>
+{% endblock %}

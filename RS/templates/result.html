@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %} Predict Result {% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-12 my-4">
+            {% if tables %}
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Brief Article</th>
+                        <th>Creator</th>
+                        <th>Date</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in tables[0].itertuples() %}
+                    <tr>
+                        <td><img src="{{ row.imgs }}" alt="{{ row.titles }}" style="max-width:100px"></td>
+                        <td>{{ row.titles }}</td>
+                        <td>{{ row.brief_articles }}</td>
+                        <td>{{ row.creators }}</td>
+                        <td>{{ row.dates }}</td>
+                        <td><a href="{{ row.links }}" target="_blank">Read More</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p>No articles found.</p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a href="/" class="btn btn-primary">Return to Main</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
