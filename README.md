@@ -4,7 +4,7 @@ __Welcome to my NLP projects repository, where I showcase my natural language pr
 ## 1️⃣ <a href="https://github.com/El-Srogey/NLPower/tree/main/RS"> Article Recommendation System </a>
 In this project, I scraped data from online news articles and used K-Nearest Neighbors (KNN) algorithm to build a recommendation system. I also utilized Flask, HTML, and Bootstrap to create a web application for users to interact with the model.
 
-## 2️⃣ Search Engine for Better Ranking
+## <a href='https://github.com/El-Srogey/NLPower/tree/main/Search%20Engine%20Project'>2️⃣ Search Engine for Better Ranking</a>
 I developed a search engine that uses Google Programmable Search Engine to rank search results based on a custom scoring algorithm. This project involved web scraping, data cleaning, and building a ranking model using natural language processing techniques.
 
 ## 3️⃣ Sentiment Analysis Project
