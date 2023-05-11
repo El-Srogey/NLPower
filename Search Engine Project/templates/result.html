@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <title>SearchMe</title>
+    <meta charset="UTF-8"/>
+    <style>
+      /* Global styles */
+      body {
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          line-height: 1.5;
+          color: #333;
+          margin: 0;
+          padding: 0;
+        }
+
+        /* Header styles */
+        header {
+          background-color: #0077b6;
+          padding: 20px;
+          text-align: center;
+        }
+      
+      h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+      
+      /* List styles */
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      li {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+      
+      h2 {
+        margin: 0 0 10px;
+        font-size: 24px;
+      }
+      
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      .link {
+        color: #0084ff;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      
+      .link:hover {
+        text-decoration: underline;
+      }
+      
+      .snippet {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 5px;
+      }
+      
+      .snippet span {
+        background-color: yellow;
+      }
+      
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+    
+  <body>
+    <header>
+      <h1>SearchMe</h1>
+      <form action='/result'>
+        <input type="text" name="query" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    
+    <main>
+      <h2>Results ({{ search_time }} seconds)</h2>
+      <ul>
+        {% for _, row in table.iterrows() %}
+        <li>
+          <div class="title">{{ row['title'] }}</div>
+          <div class="snippet">{{ row['snippet'] }}</div>
+          <a class="link" href="{{ row['link'] }}" target="_blank">{{ row['link'] }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <p> <b>Query-Time: {{ table.loc[0]['created'] }}</b> </p>
+    </main>
+    
+    <footer>
+      &copy; 2023 SearchMe. All rights reserved.
+    </footer>
+  </body>
+</html>```

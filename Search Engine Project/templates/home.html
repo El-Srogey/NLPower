@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SearchMe</title>
+        <meta charset="UTF-8"/>
+        <style>
+            /* Global styles */
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+            
+            /* Header styles */
+            header {
+                background-color: #0077b6;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            h1 {
+                margin: 0;
+                font-size: 36px;
+                color: #fff;
+            }
+            
+            /* Form styles */
+            form {
+                margin: 40px auto;
+                max-width: 600px;
+                text-align: center;
+            }
+            
+            label {
+                font-size: 24px;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 10px;
+                color: #0077b6;
+            }
+            
+            input[type="text"] {
+                font-size: 18px;
+                padding: 8px 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                width: 60%;
+            }
+            
+            input[type="submit"] {
+                font-size: 18px;
+                font-weight: bold;
+                color: #fff;
+                background-color: #0077b6;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+            
+            input[type="submit"]:hover {
+                background-color: #004259;
+            }
+            
+            input[type="text"]:focus {
+                outline: none;
+                border: 1px solid #0077b6;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>SearchMe</h1>
+        </header>
+        <form action="/result">
+            <label>Your Query</label>
+            <input name="query" type="text" autofocus required placeholder="Search For Anything">
+            <input type="submit" value="Search">
+        </form>
+    </body>
+</html>
